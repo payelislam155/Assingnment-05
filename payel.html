@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="h-24 bg-yellow-50">
+        <div class="navbar bg-base-1 max-w-[1100px] mx-auto">
+            <div class="navbar-end">
+                <p class="text-2xl font-bold"><span id="totalBalance">$00</span> BDT</p>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-[1100px] mx-auto">
+        <section>
+            <!-- Section 1 -->
+            <div>
+                <input id="balanceAddInput" type="number" placeholder="Write Donation Amount">
+                <button id="addButton">Donate Now</button>
+                <p id="donateShow">$00BDT</p>
+            </div>
+            <!-- Section 2 -->
+            <div>
+                <input id="balanceMinusInput" type="number" placeholder="Write Donation Amount">
+                <button id="minusButton">Donate Now</button>
+                <p id="donateShowMinus">$0 BDT</p>
+            </div>
+            <!-- Section 3 -->
+            <div>
+                <input id="balanceThirdCard" type="number" placeholder="Write Donation Amount">
+                <button id="thirdDonationBtn">Donate Now</button>
+                <p id="donateShow3">$00 BDT</p>
+            </div>
+        </section>
+    </main>
+    <script src="exercise.js"></script>
+</body>
+</html>
