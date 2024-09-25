@@ -1,4 +1,4 @@
-function setupDonation(donationBtn, inputDonation, totalDonation, allDonation, isAdding) {
+function armanDonation(donationBtn, inputDonation, totalDonation, allDonation, isAdding) {
     document.getElementById(donationBtn).addEventListener('click', function() {
         const donationInput = document.getElementById(inputDonation);
         const donationAmount = parseInt(donationInput.value, 10);
@@ -27,7 +27,9 @@ function setupDonation(donationBtn, inputDonation, totalDonation, allDonation, i
         const newLocalDonation = isAdding ? currentLocalDonation + donationAmount : Math.max(currentLocalDonation - donationAmount, 0);
 
         totalDonationElement.innerText = newTotalDonation;
-        allDonationElement.innerText = newLocalDonation;
+
+       const p1 =   donationAmount + newLocalDonation;
+        allDonationElement.innerText = p1;
 
         document.getElementById('donateShowMinus1').innerText = newTotalDonation;
 
@@ -67,9 +69,9 @@ function formatDate(date) {
 
                   // Input action function
 document.addEventListener('DOMContentLoaded', function() {
-    setupDonation('addButton', 'balanceAddInput', 'totalBalance', 'donateShow', true);
-    setupDonation('minusButton', 'balanceMinusInput', 'totalBalance', 'donateShowMinus1', false);
-    setupDonation('thirdDonationBtn', 'balanceThirdCard', 'totalBalance', 'donateShow3', true);
+    armanDonation('addButton', 'balanceAddInput', 'totalBalance', 'donateShow', true);
+    armanDonation('minusButton', 'balanceMinusInput', 'totalBalance', 'donateShowMinus1', false);
+    armanDonation('thirdDonationBtn', 'balanceThirdCard', 'totalBalance', 'donateShow3', true);
 });
 
                  // History tab functionality
