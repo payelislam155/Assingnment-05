@@ -44,8 +44,8 @@ function setupDonation(donateBtnId, donationInputId, totalDonationId, localDonat
             const formattedDate = formatDate(currentDate); 
     
             const div2 = document.createElement("div");
-            div2.classList.add("bg-white");
-            div2.style.border = "2px solid gray";
+            div2.classList.add("bg-yellow-50");
+            div2.style.border = "1px solid gray";
             div2.style.padding = "20px";
             div2.innerHTML = `
             <p class = "text-2xl font-bold">${newLocalDonation}Taka is Donated for Flood Relief in Feni,Bangladesh</p>
