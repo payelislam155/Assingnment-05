@@ -118,5 +118,6 @@ donationTab.addEventListener("click", function(){
     );
     historyTab.classList.add("text-gray-600");
     document.getElementById("all-card").classList.remove("hidden");
+    document.getElementById("transaction-section").classList.add("hidden");
 });
 
